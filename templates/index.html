@@ -1,0 +1,21 @@
+<!--
+	   index.html
+	      
+-->
+
+<html>
+	<head>
+		<title>Nora SpyCam</title>
+		<link rel="stylesheet" href='../static/style.css'/>
+	</head>
+	<body>
+		<h1>Nora SpyCam</h1>
+		<h3><img src="{{ url_for('video_feed') }}" width="55%"></h3>
+		<hr>
+	</body>
+	<audio controls>
+		<source src="{{ url_for('audio_feed') }}" type="audio/x-wav;codec=pcm">
+			Your browser does not support the audio element.
+	</audio>
+</html>
+
